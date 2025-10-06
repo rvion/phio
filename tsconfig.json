@@ -3,6 +3,13 @@
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
     "strict": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+
+    // 💬 2025-10-06 rvion:
+    // without this, we have 20+ errors because this simplified
+    // tsconfig file that lacks modern lib entries
+    // and use "moduleResolution": "bundler"
+    // proposal: use "skipLibCheck" for now ?
+    "skipLibCheck": true
   }
 }
