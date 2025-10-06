@@ -10,6 +10,7 @@ import { ListFilesCommand } from './commands/ListFilesCommand'
 import { LoginCommand } from './commands/LoginCommand'
 import { LogoutCommand } from './commands/LogoutCommand'
 import { LogsCommand } from './commands/LogsCommand'
+import { SyncPublicCommand } from './commands/SyncPublicCommand'
 import { WhoAmICommand } from './commands/WhoAmICommand'
 
 program
@@ -22,6 +23,7 @@ program
   .addCommand(WhoAmICommand())
   .addCommand(ListCommand())
   .addCommand(ListFilesCommand())
+  .addCommand(SyncPublicCommand())
   .addCommand(LinkCommand())
   .addCommand(DeployCommand())
   .addCommand(LogoutCommand())
