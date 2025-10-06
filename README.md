@@ -32,6 +32,23 @@ bunx phio deploy [instance]
 bunx phio logs [instance]
 ```
 
+**Show FTP Files**
+
+```sh
+# bunx phio lsfiles [options] [instanceName] [path]
+#   - path: Path to list (relative to instance root) (default: "pb_public")
+
+bunx phio lsfiles
+# Connecting to FTP server...
+# Listing contents of <your-instance>/pb_public:
+
+# DIR   assets
+# FILE  index.html                               (464 B)
+# FILE  vite.svg                                 (1.46 KB)
+```
+
+
+
 ## Configuration
 
 Use `pockethost` in your `package.json` to save your instance name so you don't need to keep typing it:

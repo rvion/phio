@@ -6,6 +6,7 @@ import { DevCommand } from './commands/DevCommand'
 import { InfoCommand } from './commands/InfoCommand'
 import { LinkCommand } from './commands/LinkCommand'
 import { ListCommand } from './commands/ListCommand'
+import { ListFilesCommand } from './commands/ListFilesCommand'
 import { LoginCommand } from './commands/LoginCommand'
 import { LogoutCommand } from './commands/LogoutCommand'
 import { LogsCommand } from './commands/LogsCommand'
@@ -20,6 +21,7 @@ program
   .addCommand(DevCommand())
   .addCommand(WhoAmICommand())
   .addCommand(ListCommand())
+  .addCommand(ListFilesCommand())
   .addCommand(LinkCommand())
   .addCommand(DeployCommand())
   .addCommand(LogoutCommand())
